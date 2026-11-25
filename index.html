@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="Come eliminare il tuo account ONE Driver e cosa succede ai tuoi dati.">
+    <meta name="robots" content="index, follow">
+    <title>Eliminazione account · ONE Driver</title>
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+    <style>
+        :root {
+            --ink: #111111;
+            --text: #1F2937;
+            --muted: #6B7280;
+            --line: #E5E7EB;
+            --bg: #F6F7F9;
+            --surface: #FFFFFF;
+            --primary: #2755A2;
+            --primary-soft: #EEF3FB;
+            --danger: #B42318;
+            --danger-soft: #FEF3F2;
+            --success: #067647;
+            --success-soft: #ECFDF3;
+            --radius: 16px;
+        }
+
+        * { box-sizing: border-box; }
+
+        html { -webkit-text-size-adjust: 100%; }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        a { color: var(--primary); }
+
+        .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+        /* Intestazione */
+        .hero {
+            background: var(--ink);
+            color: #FFFFFF;
+            padding: 28px 0 96px;
+        }
+        .brand { display: flex; align-items: center; gap: 14px; }
+        .brand img { width: 48px; height: 48px; border-radius: 12px; display: block; }
+        .brand strong { display: block; font-size: 17px; letter-spacing: .02em; }
+        .brand span { display: block; font-size: 13px; color: #A3A3A3; }
+        .hero h1 {
+            margin: 56px 0 12px;
+            font-size: clamp(30px, 5vw, 44px);
+            line-height: 1.15;
+            letter-spacing: -.02em;
+        }
+        .hero p { margin: 0; max-width: 620px; font-size: 18px; color: #D4D4D4; }
+
+        /* Schede */
+        main { margin-top: -60px; padding-bottom: 48px; }
+        .grid { display: grid; gap: 20px; grid-template-columns: 1fr 1fr; }
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 28px;
+            box-shadow: 0 1px 2px rgba(16, 24, 40, .04), 0 12px 32px -12px rgba(16, 24, 40, .12);
+        }
+        .card h2 { margin: 0 0 4px; font-size: 20px; line-height: 1.3; color: var(--ink); }
+        .card .sub { margin: 0 0 20px; color: var(--muted); font-size: 15px; }
+        .tag {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 3px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            background: var(--primary-soft);
+            color: var(--primary);
+        }
+        .tag.neutral { background: #F3F4F6; color: #374151; }
+
+        /* Passaggi numerati */
+        ol.steps { list-style: none; margin: 0; padding: 0; counter-reset: step; }
+        ol.steps li {
+            position: relative;
+            counter-increment: step;
+            padding: 0 0 16px 44px;
+            font-size: 15px;
+        }
+        ol.steps li:last-child { padding-bottom: 0; }
+        ol.steps li::before {
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: -1px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--ink);
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 28px;
+            text-align: center;
+        }
+        ol.steps li:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            left: 13.5px;
+            top: 31px;
+            bottom: 3px;
+            width: 1px;
+            background: var(--line);
+        }
+        .ui {
+            display: inline-block;
+            padding: 0 7px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: #F9FAFB;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--ink);
+            white-space: nowrap;
+        }
+        .ui.danger { border-color: #FDA29B; background: var(--danger-soft); color: var(--danger); }
+
+        .note {
+            margin-top: 20px;
+            padding: 12px 14px;
+            border-radius: 10px;
+            background: var(--bg);
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        .mail {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin: 20px 0 0;
+            padding: 14px 16px;
+            border: 1px dashed #CBD5E1;
+            border-radius: 12px;
+        }
+        .mail code {
+            font-family: inherit;
+            font-weight: 700;
+            color: var(--ink);
+            font-size: clamp(14px, 3.9vw, 16px);
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 11px 18px;
+            border-radius: 10px;
+            background: var(--ink);
+            color: #FFFFFF;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background .15s ease;
+        }
+        .btn:hover { background: #333333; }
+        .btn:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
+        .btn svg { width: 18px; height: 18px; }
+
+        /* Dati */
+        .section-title { margin: 44px 0 16px; font-size: 24px; line-height: 1.3; color: var(--ink); }
+        .data { padding: 0; overflow: hidden; }
+        .data-cols { display: grid; grid-template-columns: 1fr 1fr; }
+        .data-col { padding: 26px 28px; }
+        .data-col + .data-col { border-left: 1px solid var(--line); }
+        .data-col h3 { display: flex; align-items: center; gap: 10px; margin: 0 0 14px; font-size: 16px; color: var(--ink); }
+        .dot {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            flex: none;
+        }
+        .dot svg { width: 14px; height: 14px; }
+        .dot.del { background: var(--danger-soft); color: var(--danger); }
+        .dot.keep { background: var(--success-soft); color: var(--success); }
+        .data-col ul { margin: 0; padding-left: 18px; font-size: 15px; }
+        .data-col li { margin-bottom: 6px; }
+        .data-foot {
+            padding: 16px 28px;
+            border-top: 1px solid var(--line);
+            background: #FAFAFA;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        /* Domande */
+        details {
+            background: var(--surface);
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        summary {
+            cursor: pointer;
+            list-style: none;
+            padding: 16px 20px;
+            font-weight: 600;
+            color: var(--ink);
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        summary::-webkit-details-marker { display: none; }
+        summary::after { content: "+"; font-size: 20px; line-height: 1; color: var(--muted); }
+        details[open] summary::after { content: "−"; }
+        details p { margin: 0; padding: 0 20px 18px; font-size: 15px; color: var(--muted); }
+
+        footer {
+            border-top: 1px solid var(--line);
+            padding: 28px 0 40px;
+            font-size: 14px;
+            color: var(--muted);
+        }
+        footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+        footer strong { color: var(--ink); }
+
+        @media (max-width: 720px) {
+            .hero { padding-bottom: 84px; }
+            .hero h1 { margin-top: 40px; }
+            .hero p { font-size: 16px; }
+            .grid, .data-cols { grid-template-columns: 1fr; }
+            .card { padding: 22px; }
+            .data { padding: 0; }
+            .data-col { padding: 22px; }
+            .data-col + .data-col { border-left: 0; border-top: 1px solid var(--line); }
+            .data-foot { padding: 16px 22px; }
+            .btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="wrap">
+            <div class="brand">
+                <img src="data:image/png;base64,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" alt="" width="48" height="48">
+                <div>
+                    <strong>ONE Driver</strong>
+                    <span>App clienti di Autofficina Montegrappa</span>
+                </div>
+            </div>
+            <h1>Eliminare il tuo account ONE Driver</h1>
+            <p>Puoi eliminare il tuo account in qualsiasi momento, direttamente dall'app oppure scrivendoci un'email. Qui trovi i passaggi e cosa succede ai tuoi dati.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrap">
+            <div class="grid">
+                <section class="card" aria-labelledby="dall-app">
+                    <span class="tag">Più veloce</span>
+                    <h2 id="dall-app">Dall'app</h2>
+                    <p class="sub">L'account viene eliminato subito.</p>
+                    <ol class="steps">
+                        <li>Apri <strong>ONE Driver</strong> e accedi con il tuo account.</li>
+                        <li>Vai nella scheda <span class="ui">Profilo</span>.</li>
+                        <li>Tocca <span class="ui">Elimina account</span> e poi <span class="ui">Invia codice di conferma</span>.</li>
+                        <li>Inserisci il codice a 6 cifre che ricevi via email e tocca <span class="ui danger">Elimina definitivamente</span>.</li>
+                    </ol>
+                    <p class="note">Il codice è valido 10 minuti. Se non lo trovi, controlla anche la cartella spam.</p>
+                </section>
+
+                <section class="card" aria-labelledby="via-email">
+                    <span class="tag neutral">Senza app</span>
+                    <h2 id="via-email">Via email</h2>
+                    <p class="sub">Se non riesci più ad accedere all'app.</p>
+                    <ol class="steps">
+                        <li>Scrivi dall'<strong>indirizzo email con cui sei registrato</strong>, così possiamo riconoscere il tuo account.</li>
+                        <li>Usa come oggetto <strong>"Eliminazione account ONE Driver"</strong> e indica nome e cognome.</li>
+                        <li>Ti confermiamo l'avvenuta eliminazione via email entro <strong>30 giorni</strong>.</li>
+                    </ol>
+                    <div class="mail">
+                        <code>info@<wbr>autofficinamontegrappa.com</code>
+                        <a class="btn" href="mailto:info@autofficinamontegrappa.com?subject=Eliminazione%20account%20ONE%20Driver&amp;body=Buongiorno%2C%0A%0Achiedo%20l%27eliminazione%20del%20mio%20account%20ONE%20Driver%20collegato%20a%20questo%20indirizzo%20email.%0A%0ANome%20e%20cognome%3A%20%0A%0AGrazie.">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                            Scrivi l'email
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <h2 class="section-title">Cosa succede ai tuoi dati</h2>
+            <section class="card data" aria-label="Dati eliminati e conservati">
+                <div class="data-cols">
+                    <div class="data-col">
+                        <h3>
+                            <span class="dot del"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></span>
+                            Vengono eliminati
+                        </h3>
+                        <ul>
+                            <li>L'account di accesso all'app: email, password e nome del profilo.</li>
+                            <li>Gli accessi attivi su tutti i dispositivi: vieni disconnesso subito.</li>
+                            <li>Il collegamento tra l'app e la tua scheda cliente.</li>
+                        </ul>
+                    </div>
+                    <div class="data-col">
+                        <h3>
+                            <span class="dot keep"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg></span>
+                            Restano all'officina
+                        </h3>
+                        <ul>
+                            <li>La tua scheda cliente con i dati anagrafici.</li>
+                            <li>Veicoli e storico degli interventi.</li>
+                            <li>Preventivi e fatture.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="data-foot">
+                    I dati che restano all'officina servono per gli obblighi fiscali e contabili e sono conservati per il periodo previsto dalla legge, in genere 10 anni per i documenti fiscali. Per chiedere la cancellazione anche di questi dati, nei limiti consentiti dalla legge, scrivi a <a href="mailto:info@autofficinamontegrappa.com">info@autofficinamontegrappa.com</a>.
+                </div>
+            </section>
+
+            <h2 class="section-title">Domande frequenti</h2>
+            <details>
+                <summary>Posso annullare l'eliminazione?</summary>
+                <p>No, l'eliminazione è definitiva. Puoi però registrarti di nuovo nell'app con la stessa email quando vuoi.</p>
+            </details>
+            <details>
+                <summary>Non ricevo il codice di conferma</summary>
+                <p>Controlla la cartella spam e verifica di usare l'email con cui sei registrato. Il codice scade dopo 10 minuti: se è scaduto, richiedine uno nuovo dall'app. Se il problema continua, scrivici via email.</p>
+            </details>
+            <details>
+                <summary>Eliminando l'account perdo lo storico della mia auto?</summary>
+                <p>Lo storico non sarà più visibile nell'app, ma resta all'officina: se ti registri di nuovo con la stessa email, ritrovi veicoli, preventivi e fatture.</p>
+            </details>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div><strong>ONE Driver</strong> · App clienti di Autofficina Montegrappa</div>
+            <div>Via Frà Bartolomeo 205, 59100 Prato (PO) · <a href="mailto:info@autofficinamontegrappa.com">info@autofficinamontegrappa.com</a></div>
+        </div>
+    </footer>
+</body>
+</html>
